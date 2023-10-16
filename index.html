@@ -3,222 +3,329 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/c5120768fb.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="script.js" defer></script>
+    <title>Arquitecto Gonzalo</title>
   </head>
   <body>
-    <!-- <div class="spinner-container" id="home">
-      <div class="circles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Navbar -->
+    <nav class="relative container max-w-none mx-auto p-6 bg-red-200">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="w-16 h-16 rounded-full overflow-hidden">
+          <img
+            src="./images/g-logo.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Menu items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#AboutMe" class="hover:text-darkGrayishBlue">About Me</a>
+          <a href="#Portfolio" class="hover:text-darkGrayishBlue"
+            >My Portfolio</a
+          >
+          <a href="#Contact" class="hover:text-darkGrayishBlue">Contact Me</a>
+        </div>
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
-    </div> -->
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex flex-col items-center self-end md:hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#AboutMe" class="hover:text-darkGrayishBlue">About Me</a>
+          <a href="#Portfolio" class="hover:text-darkGrayishBlue"
+            >My Portfolio</a
+          >
+          <a href="#Contact" class="hover:text-darkGrayishBlue">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 justify-between"
+      >
+        <!-- left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-3xl font-bold text-center md:text-4xl md:text-left"
+          >
+            Transforma tus sueños en Hogares Asequibles.
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Con más de [X] años de experiencia y [X] proyectos completados con
+            éxito, permítenos convertir tus sueños arquitectónicos en realidad.
+          </p>
+          <a
+            href="#Contact"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >¡Cotiza Ahora!</a
+          >
+        </div>
+        <!-- image -->
+        <div class="max-w-1/4 md:w-2/5">
+          <img src="./images/house1.jpg" alt="" class="mx-2" />
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section>
+      <!-- Flex Container -->
+      <div
+        class="container max-w-3/4 flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row justify-between"
+      >
+        <!-- About me Image -->
+        <div class="max-w-1/2 md:w-1/3 self-center">
+          <img src="./images/profile1.jpg" alt="" />
+        </div>
+        <!-- About me text -->
+        <div class="flex flex-col mb-32 space-y-4 items-center md:w-2/3">
+          <h3
+            class="max-w-md text-2xl font-bold align-text-top text-center md:text-3xl md:text-center"
+          >
+            About me
+          </h3>
+          <p
+            id="#AboutMe"
+            class="max-w-md text-center text-darkGrayishBlue mx-4 md:text-left"
+          >
+            Graduado de la Universidad de [Nombre de la Universidad]. Soy un
+            arquitecto comprometido con los estándares más altos de excelencia y
+            un ojo meticuloso para los detalles. Mi pasión por la creación de
+            espacios inspiradores y funcionales me ha llevado a completar con
+            éxito una amplia gama de proyectos arquitectónicos. Mi enfoque en el
+            diseño innovador y la satisfacción del cliente ha sido fundamental
+            en mi carrera, y me enorgullece transformar ideas en realidad. A
+            través de mi experiencia y dedicación, estoy listo para enfrentar
+            cualquier desafío arquitectónico y crear soluciones excepcionales
+            para tus necesidades
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="Portfolio">
+      <div
+        class="container max-w-3/4 flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row justify-betwee"
+      >
+        <!-- Project Description -->
+        <div class="flex flex-col mb-32 space-y-4 items-center md:w-1/3 mr-2">
+          <h3
+            id="projectTitle"
+            class="max-w-md text-2xl font-bold text-center md:text-3xl md:text-center"
+          >
+            Descripción del proyecto
+          </h3>
+          <p
+            id="projectDescription"
+            class="max-w-sm text-center text-darkGrayishBlue md:text-left"
+          >
+            Aqui va la descripcion de los proyectos que aparecerán a la derecha.
+            Se actualizará dinamicamente conforme cambie la imagen para que el
+            titulo y la descripción coinsidan con el proyecto que se muestra.
+          </p>
+        </div>
+        <!-- Carousel -->
+        <div class="max-w-3/4 md:w-3/5 h-200px" aria-label="">
+          <div class="carousel" data-carousel>
+            <button class="carousel-btn prev" data-carousel-button="prev">
+              <svg
+                class="w-10 h-10 text-blue-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+            <button class="carousel-btn next" data-carousel-button="next">
+              <svg
+                class="w-10 h-10 text-blue-500 transform rotate-180"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
 
-    <div class="container">
-      <div class="hamburger-menu">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-        <span>Close</span>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="./images/darkTower.jpg" alt="a dark tower" />
+              </li>
+              <li class="slide">
+                <img src="./images/lightTower.jpg" alt="a light tower" />
+              </li>
+              <li class="slide">
+                <img src="./images/roofGarden.jpg" alt="a roof garden" />
+              </li>
+              <li class="slide" data-active>
+                <img
+                  src="https://source.unsplash.com/78A265wPiO4"
+                  alt="Nature Image #1"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="https://source.unsplash.com/eOpewngf68w"
+                  alt="Nature Image #2"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="https://source.unsplash.com/ndN00KmbJ1c"
+                  alt="Nature Image #3"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <header class="header">
-        <div class="img-wrapper">
-          <img src="images/roofGarden.jpg" />
+    </section>
+    <!-- Testimonials -->
+    <section id="tertimonials">
+      <!-- Container to heading and testimonial blocks -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <h2 class="text-3xl font-bold text-center">
+          Lo que dicen mis clientes
+        </h2>
+        <!-- Testimonials container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Testimonial 1 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 bg-veryLIghtGray md:w-1/3"
+          >
+            <div class="w-32 h-32 rounded-full overflow-hidden -mt-14">
+              <img
+                src="./images/profile4.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h5 class="text-lg font-bold">Cliente 1</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              "Un servicio de arquitectura de primera categoría. Desde el primer
+              contacto hasta la entrega final. Estamos encantados con el
+              resultado de nuestro proyecto y con la puntualidad en la entrega.
+              ¡No podríamos estar más satisfechos!"
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="hidden md:flex flex-col items-center p-6 space-y-6 bg-veryLIghtGray md:w-1/3"
+          >
+            <div class="w-32 h-32 rounded-full overflow-hidden -mt-14">
+              <img
+                src="./images/profile2.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h5 class="text-lg font-bold">Cliente 2</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              "Increíble atención al detalle y un trato amable excepcional.
+              Nuestro proyecto se completó a tiempo y con un resultado
+              impresionante. ¡Gracias por hacer realidad nuestros sueños
+              arquitectónicos!"
+            </p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="hidden md:flex flex-col items-center p-6 space-y-6 bg-veryLIghtGray md:w-1/3"
+          >
+            <div class="w-32 h-32 rounded-full overflow-hidden -mt-14">
+              <img
+                src="./images/profile5.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h5 class="text-lg font-bold">Cliente 3</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              "Experiencia excepcional trabajando con este equipo de
+              arquitectos. No solo entregaron nuestro proyecto a tiempo, sino
+              que también superaron nuestras expectativas en términos de diseño
+              y funcionalidad. ¡Altamente recomendados!"
+            </p>
+          </div>
         </div>
-        <div class="banner">
-          <h1>Arquitecto Gonzalo</h1>
-          <p></p>
-          <button>Discover now</button>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="footer" class="bg-brightRed">
+      <!-- Flex container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex md:py12 md:flex-row md:space-y-0"
+      >
+        <h2
+          class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Cotiza sin costo ahora!
+        </h2>
+        <!-- Button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-300"
+          >
+            Comienza!
+          </a>
         </div>
-      </header>
-      <section class="sidebar">
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#home" class="menu-link" data-content="Home">Home</a>
-          </li>
-          <li class="menu-item">
-            <a href="#aboutus" class="menu-link" data-content="About Us"
-              >About Us</a
-            >
-          </li>
-          <li class="menu-item">
-            <a href="#ourteam" class="menu-link" data-content="Team">Team</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Portfolio">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a href="#contactus" class="menu-link" data-content="ContactUs"
-              >ContactUs</a
-            >
-          </li>
-        </ul>
-        <div class="social-media">
-          <a href="#">Facebook Icon</a>
-          <a href="#">YouTube Icon</a>
-          <a href="#">Twitter Icon</a>
-        </div>
-      </section>
-      <section class="about-us" id="aboutus">
-        <div class="section-header">
-          <h1 class="section-heading">About Us</h1>
-          <div class="underline"></div>
-        </div>
-        <div class="services">
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-pen-nib"></i>
-              <h3>Interior</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-paint-roller"></i>
-              <h3>Exterior</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-pencil"></i>
-              <h3>Design</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-paint-brush"></i>
-              <h3>Decoration</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-ruler"></i>
-              <h3>Planning</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="service">
-            <div class="service-header">
-              <i class="fa-solid fa-building"></i>
-              <h3>Execution</h3>
-            </div>
-            <p class="service-text">Insert your message in this space</p>
-          </div>
-          <div class="about-us-img-wrapper">
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and Social links -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <!-- Logo -->
+          <div class="w-16 h-16 rounded-full overflow-hidden">
             <img
-              src="images/lightTower.jpg"
-              alt="An apartment building with lots of planters"
+              src="./images/g-logo.webp"
+              alt=""
+              class="w-full h-full object-cover"
             />
           </div>
-        </div>
-      </section>
-      <section class="team" id="ourteam">
-        <div class="section-header">
-          <h1 class="section-heading">Our Team</h1>
-          <div class="underline"></div>
-        </div>
-        <div class="cards-wrapper">
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/profile1.jpg" alt="CEO" />
-            </div>
-            <div class="card-info">
-              <h2>Ann Smith</h2>
-              <h3>CEO</h3>
-              <p>Insert your message in this space</p>
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/profile2.jpg" alt="Designer" />
-            </div>
-            <div class="card-info">
-              <h2>Tyler Brown</h2>
-              <h3>Designer</h3>
-              <p>Insert your message in this space</p>
-              <button>Read More</button>
-            </div>
-          </div>
-          <div class="card" data-tilt>
-            <div class="card-img-wrapper">
-              <img src="images/profile3.jpg" alt="Architect" />
-            </div>
-            <div class="card-info">
-              <h2>John Doe</h2>
-              <h3>Architect</h3>
-              <p>Insert your message in this space</p>
-              <button>Read More</button>
-            </div>
+          <!-- Social Links -->
+          <div class="flex justify-center space-x-4">
+            <a href="" class="h-8">facebook</a>
+            <a href="" class="h-8">X</a>
+            <a href="" class="h-8">YouTube</a>
           </div>
         </div>
-      </section>
-
-      <section class="contact" id="contactus">
-        <div class="contact-wrapper">
-          <div class="contact-left"></div>
-          <div class="contact-right">
-            <h1 class="contact-heading">Contact</h1>
-            <form action="">
-              <div class="input-group">
-                <label class="input-label" for="fullName">Full Name</label>
-                <input type="text" class="field" id="fullName" />
-              </div>
-              <div class="input-group">
-                <label class="input-label" for="email">Email</label>
-                <input type="email" class="field" id="email" />
-              </div>
-              <div class="input-group">
-                <label class="input-label" for="comments">Message</label>
-                <textarea
-                  name="comments"
-                  id="comments"
-                  cols="30"
-                  rows="10"
-                  class="message"
-                ></textarea>
-              </div>
-              <input type="submit" class="submit-btn" value="Submit" />
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer-content">
-          <p class="copyright">Copyright &copy; Gonzalo's website</p>
-          <div class="social-list">
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
-      <a href="#" class="scroll-btn">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-    </div>
-
-    <script src="script.js"></script>
-    <!-- <script src="tilt.js"></script> -->
+        <!-- Links -->
+        <!-- Input container -->
+      </div>
+    </footer>
   </body>
 </html>
